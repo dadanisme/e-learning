@@ -1,8 +1,12 @@
-import { selectUser } from "@/store/slices/user";
-interface AuthLayoutProps {
-  children: React.ReactNode;
-}
+import { Outlet } from "react-router-dom";
 
-export default function AuthLayout({ children }: AuthLayoutProps) {
-  return <div>{children}</div>;
+export default function AuthLayout() {
+  return (
+    <div>
+      <div>
+        <h1>Wrapped in Auth Layout</h1>
+      </div>
+      <Outlet />
+    </div>
+  );
 }

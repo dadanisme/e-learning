@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
-import AuthLayout from "./AuthLayout";
 
 export default function MainLayout() {
   return (
-    <AuthLayout>
+    <div>
+      <div>
+        <h1>Main Page Layout</h1>
+      </div>
       <Outlet />
-    </AuthLayout>
+    </div>
   );
 }
